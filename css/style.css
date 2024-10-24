@@ -1,0 +1,982 @@
+:root {
+  --primary: #d60303;
+  --bg: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #080808;
+  /* min-height: 6000px; */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-style: italic;
+}
+.navbar .navbar-logo span {
+  color: var(--primary-);
+}
+
+.navbar .navbar-nav a {
+  color: #080808;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar. .navbar-nav a:after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a :hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+  color: #080808;
+}
+#search {
+  color: #080808;
+}
+
+/* Search disini */
+.search-container {
+  display: none; /* Mulai dengan sembunyi */
+  position: absolute;
+  top: 65px; /* Sesuaikan dengan tinggi navbar */
+  right: 50px; /* Sesuaikan dengan jarak dari sisi kanan */
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input[type="text"] {
+  width: 300px; /* Sesuaikan lebar input */
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-container button {
+  padding: 5px 10px;
+  margin-top: 5px;
+  border: none;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #333;
+}
+
+/* Search disini */
+
+/* Hero section */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/houseware/asaasasa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; /* Tambahkan ini */
+  position: relative;
+  margin-top: 80px;
+}
+
+.hero-houseware {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/houseware/dfddfdsfs.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; /* Tambahkan ini */
+  position: relative;
+}
+
+.hero .content,
+.hero-houseware .content {
+  padding: 1.3rem 4%;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  font-size: 3em;
+  color: #362f2f;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.1;
+}
+
+.hero-houseware h1 {
+  font-size: 3em;
+  color: var(--bg);
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.1;
+}
+
+.hero .content h1 span,
+.hero-houseware h1 span {
+  color: var(--primary);
+}
+
+.hero .content p,
+.hero-houseware p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+
+.hero .content .cta,
+.hero-houseware .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #f5f2f2;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/* About Section */
+.About,
+.about-text,
+.Houseware,
+.Contact,
+.Houseware-img {
+  padding: 6rem 7% 1.4rem;
+}
+
+.About h2,
+.about-text h2,
+.Houseware h2,
+.Contact h2,
+.Houseware-img h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.About h3,
+.about h3,
+.about-text h3,
+.Houseware h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.About h3 span,
+.about-text h3 span {
+  color: var(--primary);
+}
+
+.About p,
+.about-text p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  max-width: 55rem;
+  margin: auto;
+  padding: 1rem;
+}
+
+.About .row {
+  display: flex;
+}
+
+.About .row .About-img {
+  flex: 1 1 35rem;
+  padding-top: 1px;
+}
+
+.About .row .About-img img {
+  max-width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+/* about html */
+/* style.css */
+
+/* Container untuk gambar dan teks */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 100px;
+}
+
+/* about html */
+
+/* Houseware-img */
+.Houseware-img .row {
+  display: flex;
+  margin-top: 100px;
+}
+.Houseware-img .row .Houseware-img {
+  flex: 1 1 35rem;
+}
+.Houseware-img .row .Houseware-img img {
+  max-width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+/* Houseware Section */
+.Houseware h2,
+.Contact h2,
+.Houseware-img h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem; /* Ukuran font heading */
+}
+
+.Houseware h2 span {
+  color: var(--primary);
+}
+
+.Contact p,
+.Houseware p,
+.Houseware-img p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #000;
+}
+
+.Houseware .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+  gap: 3rem; /* Jarak antara produk */
+}
+
+.Houseware .Houseware-card {
+  flex: 1 1 calc(25% - 2rem); /* Menyediakan 4 produk per baris dengan jarak */
+  text-align: center;
+  margin: 1%;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #fff; /* Warna background card */
+  border-radius: 8px; /* Membuat sudut lebih bulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan */
+  max-width: 400px; /* Membatasi lebar maksimum card */
+}
+
+.Houseware .Houseware-card img {
+  width: 100%;
+  height: auto;
+  max-width: 400px; /* Batas maksimal lebar gambar untuk proporsional */
+  margin-bottom: 0rem; /* Jarak antara gambar dan judul produk */
+  border-radius: 5px; /* Membuat sudut gambar lebih bulat */
+}
+
+.Houseware .Houseware-card .Houseware-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  margin: 0.5rem 0; /* Margin atas dan bawah untuk judul */
+}
+
+.Houseware .Houseware-card p {
+  font-size: 1.2rem;
+  color: #555; /* Warna abu-abu untuk harga */
+  margin-bottom: 0.5rem; /* Jarak bawah antar harga */
+  font-weight: 700;
+  text-align: center;
+}
+
+.Houseware-card {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.Houseware-card.show {
+  opacity: 2;
+}
+
+/* Style untuk container kategori */
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center alignment */
+  margin-bottom: 1px;
+  gap: 5px;
+  max-width: 600px; /* Batasi lebar untuk 2 baris */
+  margin-left: auto; /* Tambah properti ini untuk centering */
+  margin-right: auto; /* Tambah properti ini untuk centering */
+}
+
+/* Style untuk link kategori */
+.category-link {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-style: inherit;
+  font-weight: 550;
+}
+
+.category-link:hover {
+  color: var(--primary);
+}
+
+/* Responsif: Max 2 baris */
+.category {
+  max-width: 750px;
+}
+
+/* Efek kategory */
+/* Animasi loading titik-titik */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+#loading-dots {
+  display: none;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#loading-dots .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  animation: bounce 0.8s infinite alternate;
+}
+
+#loading-dots .dot:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+#loading-dots .dot:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+/* Efek kategory */
+
+.buy-links {
+  display: flex;
+  justify-content: center; /* Posisikan kolom link di tengah */
+  margin-top: 0.5rem;
+  gap: 2rem; /* Jarak antar kolom */
+}
+
+.buy-links .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Pusatkan link di dalam setiap kolom */
+}
+
+.platform-link {
+  display: block;
+  margin: 0.5rem 0; /* Jarak antar link */
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.whatsapp-link {
+  background-color: #25d366; /* Warna WhatsApp */
+}
+
+.tokopedia-link {
+  background-color: #42b549; /* Warna Tokopedia */
+}
+
+.shopee-link {
+  background-color: #f43b02; /* Warna Shopee */
+}
+
+.tiktokshop-link {
+  background-color: #000; /* Warna TikTok */
+}
+
+.platform-link:hover {
+  opacity: 0.8; /* Efek hover untuk semua link */
+  transform: scale(1.1);
+}
+
+/* showmore hover */
+/* Gaya default tombol "Show More" */
+.show-more-btn {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Efek hover dengan skala */
+.show-more-btn:hover {
+  background-color: #9e0202;
+  transform: scale(1.1);
+}
+
+/* showmore hover */
+
+/* Hide the modal by default */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999; /* Set z-index higher to ensure modal is above all other elements */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto; /* Kurangi margin atas dan bawah untuk memberikan lebih banyak ruang */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%; /* Adjust width as needed */
+  max-width: 1300px; /* Set a maximum width for better visuals */
+  max-height: calc(
+    100vh - 40
+  ); /* Batasi tinggi modal agar tidak menutupi navbar, memberikan ruang 40px */
+  overflow-y: auto; /* Tambahkan scroll jika konten lebih tinggi dari batas */
+}
+
+/* Modal body to display image and details side by side */
+.modal-body {
+  display: flex;
+  gap: 20px; /* Space between image and details */
+  align-items: flex-start; /* Align items to the top */
+  flex-wrap: wrap; /* Enable wrapping of content */
+}
+
+/* Container for the image */
+.modal-image-container {
+  flex: 1; /* Allow image container to grow */
+  max-width: 100%; /* Limit the width of the image container */
+}
+
+/* Image inside the modal */
+#modal-image {
+  width: 100%; /* Make image fill the container */
+  object-fit: cover; /* Ensure the image covers the container */
+  border-radius: 5px; /* Add some rounded corners if desired */
+}
+
+/* Container for the details */
+#modal-details {
+  flex: 1; /* Allow details container to grow */
+}
+
+/* The close button */
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Style for the product details table inside the modal */
+.product-details-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-details-table th,
+.product-details-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 1.2rem;
+}
+
+.product-details-table th {
+  background-color: #f4f4f4;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+/* Style for the About section in the modal */
+.about-text {
+  font-size: 1.5em; /* Adjust size as needed */
+}
+
+/* Style for the color swatches */
+.color-swatches {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.color-swatch {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Toko online  */
+.container {
+  text-align: center;
+  padding: 35px;
+}
+.promo-text {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #080808;
+  margin-bottom: 2rem;
+}
+.store-links {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.store-links img {
+  width: 130px;
+  height: 130px;
+  transition: transform 0.3s ease;
+}
+.store-links img:hover {
+  transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-details-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px;
+  flex-basis: 200px;
+  text-align: left;
+}
+
+.contact-detail i {
+  font-size: 30px;
+  color: #ff9800;
+  margin-right: 15px;
+}
+
+.contact-detail h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #333;
+}
+
+.contact-detail p {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.contact-detail a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-detail a:hover {
+  color: var(--primary);
+}
+
+.map-container {
+  margin-top: 40px;
+}
+
+.map-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.map {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.map iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(145deg, #1d1c1c, #2e2d2d);
+  color: #e2e2e2;
+  padding: 40px 0;
+  font-family: "Arial", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 250px;
+}
+
+.footer-section.about,
+.footer-section.contact {
+  flex: 1 1 15px;
+  padding: 5px 0;
+  font-size: 1.3rem;
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: var(--primary); /* Warna berubah saat di-hover */
+}
+
+.footer-section .social-icons a {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.footer-section .social-icons a:hover {
+  color: var(--primary); /* Warna berubah saat di-hover */
+}
+
+.footer-section.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section.links ul li {
+  margin-bottom: 15px;
+}
+
+.footer-section.links a {
+  color: #d3d3d3;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 1.2rem;
+}
+
+.footer-section.links a:hover {
+  color: var(--primary); /* Efek hover untuk link di bagian Quick Links */
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 1rem;
+  padding: 25px 0;
+  margin-top: 50px;
+  background-color: #222;
+}
+
+.footer-bottom a {
+  color: #ffffff; /* Ganti warna link */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-bottom a:hover {
+  color: var(--bg); /* Warna berubah saat di-hover */
+  text-decoration: underline;
+}
+
+/* Menghilangkan bullet points pada bagian kontak */
+.footer-section.contact ul {
+  list-style: none; /* Menghilangkan titik-titik di samping teks kontak */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section.contact ul li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-section.contact ul i {
+  margin-right: 10px;
+  color: var(--primary); /* Warna ikon */
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #ffffff;
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s linear;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: #000;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.3rem;
+    font-size: 1.4rem;
+  }
+  .navbar .navbar-nav a:hover {
+    color: var(--primary);
+  }
+
+  .Houseware .row .Houseware-card {
+    flex: 1 50%; /* 1 produk per baris */
+  }
+
+  .modal-content {
+    width: 100%;
+    max-width: 100%;
+    max-height: calc(100vh);
+  }
+
+  .modal-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-image-container,
+  #modal-details {
+    max-width: 100%;
+  }
+
+  #modal-image {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .product-details-table th,
+  .product-details-table td {
+    font-size: 1.3rem;
+  }
+
+  .about-text {
+    font-size: 1.3em;
+  }
+
+  .contact-details-horizontal {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .contact-detail {
+    flex: none; /* Remove flex grow */
+    max-width: 100%; /* Full width */
+    margin: 10px 0; /* Adjust margin */
+    justify-content: center; /* Center content */
+  }
+
+  .contact-detail i {
+    margin-right: 10px; /* Reduce margin on small screens */
+  }
+
+  .contact-detail h3,
+  .contact-detail p {
+    text-align: center; /* Center text */
+  }
+  .contact-detail {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer-section {
+    text-align: start;
+    width: 100%;
+  }
+  .footer-section.links {
+    text-align: start;
+  }
+
+  .footer-section.links {
+    margin-top: 20px;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .Houseware .row .Houseware-card {
+    flex: 1 1 100%; /* 1 produk per baris */
+  }
+  .contact-detail i {
+    font-size: 20px; /* Smaller icon size */
+    margin-right: 8px;
+  }
+
+  .contact-detail h3 {
+    font-size: 1.2rem; /* Smaller font size */
+  }
+
+  .contact-detail p {
+    font-size: 1rem; /* Smaller font size */
+  }
+}

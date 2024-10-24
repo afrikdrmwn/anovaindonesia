@@ -1,0 +1,460 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Houseware - Anova Indonesia</title>
+    
+
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+        rel="stylesheet"
+      />
+
+      <!-- Feather icons -->
+      <script src="https://unpkg.com/feather-icons"></script>
+
+      <!-- Stylesheet -->
+      <link rel="stylesheet" href="css/style.css" />
+
+    </head>
+    <body>
+    
+    
+      <!-- Navbar -->
+      <nav class="navbar">
+        <a href="#" class="navbar-logo"><span>ANOVAINDONESIA</span></a>
+        <div class="navbar-nav">
+          <a href="index.html#Home">Home</a>
+          <a href="tentang.html">Tentang Kami</a>
+          <a href="houseware.html">Houseware</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="navbar-extra">
+          <a href="#" id="search"><i data-feather="search"></i></a>
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+          <div class="search-container" style="display: none;">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-submit">Search</button>
+            
+
+        </div>
+        </div>  
+      </nav>
+
+      <!-- Hero section awal -->
+    <section class="hero" id="Home">
+      <main class="content">
+        <h1>LENGKAPI KEBUTUHAN RUMAH ANDA DENGAN HARGA YANG TERJANGKAU DARI TOKO<span>KAMI</span></h1>
+        <p></p>
+      
+        <a href="https://www.tokopedia.com/anova-indonesia/tampah-plastik-35-36" class="cta">Beli Sekarang!!</a>
+      </main>
+    </section>
+    <!-- Hero section akhir -->
+
+<!-- Houseware Section -->
+<section id="Houseware" class="Houseware">
+  <h2><span>Houseware</span> Colection</h2>
+  <p>Harga yang tertera adalah harga untuk pembelian offline (via WhatsApp) / pengambilan langsung ke offline store kami.</p>
+
+  <!-- Link Kategori -->
+  <div class="category">
+    <a href="#" class="category-link" data-filter="all">All product</a>
+    <a href="#" class="category-link" data-filter="rak">Rak</a>
+    <a href="#" class="category-link" data-filter="minuman">Minuman</a>
+    <a href="#" class="category-link" data-filter="makanan">Makanan</a>
+    <a href="#" class="category-link" data-filter="tempat penyimpanan">Tempat penyimpanan</a>
+    <a href="#" class="category-link" data-filter="laundry">Laundry</a>
+    <a href="#" class="category-link" data-filter="kids">Kids</a>
+    <a href="#" class="category-link" data-filter="nampan">Nampan</a>
+    <a href="#" class="category-link" data-filter="souvenir">Souvenir</a>
+    <a href="#" class="category-link" data-filter="alat kebersihan">Alat kebersihan</a>
+    <!-- Tambahkan kategori lainnya sesuai kebutuhan -->
+  </div>
+
+<!-- animasi kategory  -->
+  <div id="loading-dots">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div> 
+  </div>
+<!-- animasi kategory akhir -->
+
+  <div class="row">
+    <!-- Contoh Kartu Produk -->
+    <div class="Houseware-card" data-name="Sapi lidi kasur lakop anova" data-category="rak">
+      <img src="img/houseware/SAPU LIDI KASUR LAKOP ANOVA.png" alt="Sapu lidi kasur lakop anova" />
+      <h4 class="Houseware-card-title">SAPU LIDI KASUR LAKOP ANOVA</h4>
+      <button class="show-more-btn" data-product="1">Show More</button>
+
+      <p>Rp. 47.500,- / ECERAN</p>
+      <p>Rp. xxx.xxx,- / LUSINAN</p>
+      <p>Rp. xxx.xxx,- / DUS</p>
+      <div class="buy-links">
+        <div class="column">
+          <a href="https://shopee.co.id/yourstore" class="platform-link shopee-link">Shopee</a>
+          <a href="https://wa.me/yourwa" class="platform-link whatsapp-link">via WhatsApp</a>
+        </div>
+        <div class="column">
+          <a href="https://tokopedia.com/yourstore" class="platform-link tokopedia-link">Tokopedia</a>
+          <a href="https://tiktok.com/@yourstore" class="platform-link tiktokshop-link">TikTok Shop</a>
+        </div>
+      </div>
+    </div>
+
+    <!--  setiap Houseware-card ada di dalam div.row -->
+    <div class="Houseware-card" data-name="Sapu lidi karpet ANOVA" data-category="alat kebersihan">
+      <img src="img/houseware/sapu lidi karper.png" alt="Sapu lid karpet ANOVA" />
+      <h4 class="Houseware-card-title">SAPU LIDI KARPET BASIR ANOVA</h4>
+      <button class="show-more-btn" data-product="2">Show More</button>
+      <p>Rp. 47.500,- / ECERAN</p>
+      <p>Rp. xxx.xxx,- / LUSINAN</p>
+      <p>Rp. xxx.xxx,- / DUS</p>
+      <div class="buy-links">
+        <div class="column">
+          <a href="https://shopee.co.id/yourstore" class="platform-link shopee-link">Shopee</a>
+          <a href="https://wa.me/yourwa" class="platform-link whatsapp-link">via WhatsApp</a>
+        </div>
+        <div class="column">
+          <a href="https://tokopedia.com/yourstore" class="platform-link tokopedia-link">Tokopedia</a>
+          <a href="https://tiktok.com/@yourstore" class="platform-link tiktokshop-link">TikTok Shop</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Houseware-card" data-name="SAPU LIDI KASUR BASIR JUMBO ANOVA" data-category="alat kebersihan">
+      <img src="img/houseware/SAPU LIDI BASIR JUMBO.png" alt="SAPU LIDI KASUR BASIR JUMBO ANOVA" />
+      <h4 class="Houseware-card-title">SAPU LIDI KASUR BASIR JUMBO ANOVA</h4>
+      <button class="show-more-btn" data-product="3">Show More</button>
+      <p>Rp. 47.500,- / ECERAN</p>
+      <p>Rp. xxx.xxx,- / LUSINAN</p>
+      <p>Rp. xxx.xxx,- / DUS</p>
+      <div class="buy-links">
+        <div class="column">
+          <a href="https://shopee.co.id/yourstore" class="platform-link shopee-link">Shopee</a>
+          <a href="https://wa.me/yourwa" class="platform-link whatsapp-link">via WhatsApp</a>
+        </div>
+        <div class="column">
+          <a href="https://tokopedia.com/yourstore" class="platform-link tokopedia-link">Tokopedia</a>
+          <a href="https://tiktok.com/@yourstore" class="platform-link tiktokshop-link">TikTok Shop</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Houseware-card" data-name="SAPU LIDI KASUR BASIR SUPER J. ANOVA" data-category="alat kebersihan">
+      <img src="img/houseware/SAPU LIDI KASUR BASIR SUPER J..png" alt="SAPU LIDI KASUR BASIR SUPER J. ANOVA" />
+      <h4 class="Houseware-card-title">SAPU LIDI KASUR BASIR SUPER J. ANOVA</h4>
+      <button class="show-more-btn" data-product="4">Show More</button>
+      <p>Rp. 47.500,- / ECERAN</p>
+      <p>Rp. xxx.xxx,- / LUSINAN</p>
+      <p>Rp. xxx.xxx,- / DUS</p>
+      <div class="buy-links">
+        <div class="column">
+          <a href="https://shopee.co.id/yourstore" class="platform-link shopee-link">Shopee</a>
+          <a href="https://wa.me/yourwa" class="platform-link whatsapp-link">via WhatsApp</a>
+        </div>
+        <div class="column">
+          <a href="https://tokopedia.com/yourstore" class="platform-link tokopedia-link">Tokopedia</a>
+          <a href="https://tiktok.com/@yourstore" class="platform-link tiktokshop-link">TikTok Shop</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Houseware-card" data-name="SAPU LIDI KASUR BASIR MEDIUM ANOVA" data-category="alat kebersihan">
+      <img src="img/houseware/SAPU LIDI KASUR BASIR MEDIUM ANOVA.png" alt="SAPU LIDI KASUR BASIR MEDIUM ANOVA" />
+      <h4 class="Houseware-card-title">SAPU LIDI KASUR BASIR MEDIUM ANOVA</h4>
+      <button class="show-more-btn" data-product="5">Show More</button>
+      <p>Rp. 47.500,- / ECERAN</p>
+      <p>Rp. xxx.xxx,- / LUSINAN</p>
+      <p>Rp. xxx.xxx,- / DUS</p>
+      <div class="buy-links">
+        <div class="column">
+          <a href="https://shopee.co.id/yourstore" class="platform-link shopee-link">Shopee</a>
+          <a href="https://wa.me/yourwa" class="platform-link whatsapp-link">via WhatsApp</a>
+        </div>
+        <div class="column">
+          <a href="https://tokopedia.com/yourstore" class="platform-link tokopedia-link">Tokopedia</a>
+          <a href="https://tiktok.com/@yourstore" class="platform-link tiktokshop-link">TikTok Shop</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Houseware-card" data-name="SAPU LIDI KASUR KUMBO" data-category="alat kebersihan">
+      <img src="img/houseware/SAPU LIDI KASUR KUMBO.png" alt="SAPU LIDI KASUR KUMBO" />
+      <h4 class="Houseware-card-title">SAPU LIDI KASUR KUMBO</h4>
+      <button class="show-more-btn" data-product="6">Show More</button>
+      <p>Rp. 47.500,- / ECERAN</p>
+      <p>Rp. xxx.xxx,- / LUSINAN</p>
+      <p>Rp. xxx.xxx,- / DUS</p>
+      <div class="buy-links">
+        <div class="column">
+          <a href="https://shopee.co.id/yourstore" class="platform-link shopee-link">Shopee</a>
+          <a href="https://wa.me/yourwa" class="platform-link whatsapp-link">via WhatsApp</a>
+        </div>
+        <div class="column">
+          <a href="https://tokopedia.com/yourstore" class="platform-link tokopedia-link">Tokopedia</a>
+          <a href="https://tiktok.com/@yourstore" class="platform-link tiktokshop-link">TikTok Shop</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Houseware-card" data-name="SAPU LIDI KASUR WALINGI ANOVA" data-category="alat kebersihan">
+      <img src="img/houseware/SAPU LIDI KASUR WALINGU ANOVA .png" alt="SAPU LIDI KASUR WALINGI ANOVA" />
+      <h4 class="Houseware-card-title">SAPU LIDI KASUR WALINGI ANOVA</h4>
+      <button class="show-more-btn" data-product="7">Show More</button>
+      <p>Rp. 47.500,- / ECERAN</p>
+      <p>Rp. xxx.xxx,- / LUSINAN</p>
+      <p>Rp. xxx.xxx,- / DUS</p>
+      <div class="buy-links">
+        <div class="column">
+          <a href="https://shopee.co.id/yourstore" class="platform-link shopee-link">Shopee</a>
+          <a href="https://wa.me/yourwa" class="platform-link whatsapp-link">via WhatsApp</a>
+        </div>
+        <div class="column">
+          <a href="https://tokopedia.com/yourstore" class="platform-link tokopedia-link">Tokopedia</a>
+          <a href="https://tiktok.com/@yourstore" class="platform-link tiktokshop-link">TikTok Shop</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Houseware-card" data-name="SAPU LIDI KASUR WD "data-category="alat kebersihan">
+      <img src="img/houseware/SAPU LIDI KASUR WD1.png" alt="SAPU LIDI KASUR WD" />
+      <h4 class="Houseware-card-title">SAPU LIDI KASUR WD</h4>
+      <button class="show-more-btn" data-product="8">Show More</button>
+      <p>Rp. 47.500,- / ECERAN</p>
+      <p>Rp. xxx.xxx,- / LUSINAN</p>
+      <p>Rp. xxx.xxx,- / DUS</p>
+      <div class="buy-links">
+        <div class="column">
+          <a href="https://shopee.co.id/yourstore" class="platform-link shopee-link">Shopee</a>
+          <a href="https://wa.me/yourwa" class="platform-link whatsapp-link">via WhatsApp</a>
+        </div>
+        <div class="column">
+          <a href="https://tokopedia.com/yourstore" class="platform-link tokopedia-link">Tokopedia</a>
+          <a href="https://tiktok.com/@yourstore" class="platform-link tiktokshop-link">TikTok Shop</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Houseware-card" data-name="SAPU LIDI KASUR SAWIT ANOVA "data-category="alat kebersihan">
+      <img src="img/houseware/SAPU LIDI KASUR SAWIT ANOVA.png" alt="SAPU LIDI KASUR SAWIT ANOVA" />
+      <h4 class="Houseware-card-title">SAPU LIDI KASUR SAWIT ANOVA</h4>
+      <button class="show-more-btn" data-product="9">Show More</button>
+      <p>Rp. 47.500,- / ECERAN</p>
+      <p>Rp. xxx.xxx,- / LUSINAN</p>
+      <p>Rp. xxx.xxx,- / DUS</p>
+      <div class="buy-links">
+        <div class="column">
+          <a href="https://shopee.co.id/yourstore" class="platform-link shopee-link">Shopee</a>
+          <a href="https://wa.me/yourwa" class="platform-link whatsapp-link">via WhatsApp</a>
+        </div>
+        <div class="column">
+          <a href="https://tokopedia.com/yourstore" class="platform-link tokopedia-link">Tokopedia</a>
+          <a href="https://tiktok.com/@yourstore" class="platform-link tiktokshop-link">TikTok Shop</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Houseware-card" data-name="SAPU LIDI KASUR BULAT  "data-category="alat kebersihan">
+      <img src="img/houseware/SAPU LIDI KASUR BULAT KUMBO.png" alt="SAPU LIDI KASUR BULAT" />
+      <h4 class="Houseware-card-title">SAPU LIDI KASUR BULAT</h4>
+      <button class="show-more-btn" data-product="10">Show More</button>
+      <p>Rp. 47.500,- / ECERAN</p>
+      <p>Rp. xxx.xxx,- / LUSINAN</p>
+      <p>Rp. xxx.xxx,- / DUS</p>
+      <div class="buy-links">
+        <div class="column">
+          <a href="https://shopee.co.id/yourstore" class="platform-link shopee-link">Shopee</a>
+          <a href="https://wa.me/yourwa" class="platform-link whatsapp-link">via WhatsApp</a>
+        </div>
+        <div class="column">
+          <a href="https://tokopedia.com/yourstore" class="platform-link tokopedia-link">Tokopedia</a>
+          <a href="https://tiktok.com/@yourstore" class="platform-link tiktokshop-link">TikTok Shop</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Houseware-card" data-name="SAPU LIDI KASUR DRAGON  "data-category="alat kebersihan">
+      <img src="img/houseware/SAPU LIDI KASUR DRAGON.png" alt="SAPU LIDI KASUR DRAGON" />
+      <h4 class="Houseware-card-title">SAPU LIDI KASUR DRAGON</h4>
+      <button class="show-more-btn" data-product="11">Show More</button>
+      <p>Rp. 47.500,- / ECERAN</p>
+      <p>Rp. xxx.xxx,- / LUSINAN</p>
+      <p>Rp. xxx.xxx,- / DUS</p>
+      <div class="buy-links">
+        <div class="column">
+          <a href="https://shopee.co.id/yourstore" class="platform-link shopee-link">Shopee</a>
+          <a href="https://wa.me/yourwa" class="platform-link whatsapp-link">via WhatsApp</a>
+        </div>
+        <div class="column">
+          <a href="https://tokopedia.com/yourstore" class="platform-link tokopedia-link">Tokopedia</a>
+          <a href="https://tiktok.com/@yourstore" class="platform-link tiktokshop-link">TikTok Shop</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Houseware-card" data-name="SAPU LIDI TAMAN PREMIUM  "data-category="alat kebersihan">
+      <img src="img/houseware/SAPU LIDI TAMAN PREMIUM2.png" alt="SAPU LIDI TAMAN PREMIUM" />
+      <h4 class="Houseware-card-title">SAPU LIDI TAMAN PREMIUM</h4>
+      <button class="show-more-btn" data-product="12">Show More</button>
+      <p>Rp. 47.500,- / ECERAN</p>
+      <p>Rp. xxx.xxx,- / LUSINAN</p>
+      <p>Rp. xxx.xxx,- / DUS</p>
+      <div class="buy-links">
+        <div class="column">
+          <a href="https://shopee.co.id/yourstore" class="platform-link shopee-link">Shopee</a>
+          <a href="https://wa.me/yourwa" class="platform-link whatsapp-link">via WhatsApp</a>
+        </div>
+        <div class="column">
+          <a href="https://tokopedia.com/yourstore" class="platform-link tokopedia-link">Tokopedia</a>
+          <a href="https://tiktok.com/@yourstore" class="platform-link tiktokshop-link">TikTok Shop</a>
+        </div>
+      </div>  
+    </div>
+
+    <div class="Houseware-card" data-name="SAPU LIDI TAMAN TEBAL AWET "data-category="alat kebersihan">
+      <img src="img/houseware/SAPU LIDI  TEBAL AWET 2.png" alt="SAPU LIDI TAMAN TEBAL AWET" />
+      <h4 class="Houseware-card-title">SAPU LIDI TAMAN TEBAL AWET</h4>
+      <button class="show-more-btn" data-product="13">Show More</button>
+      <p>Rp. 47.500,- / ECERAN</p>
+      <p>Rp. xxx.xxx,- / LUSINAN</p>
+      <p>Rp. xxx.xxx,- / DUS</p>
+      <div class="buy-links">
+        <div class="column">
+          <a href="https://shopee.co.id/yourstore" class="platform-link shopee-link">Shopee</a>
+          <a href="https://wa.me/yourwa" class="platform-link whatsapp-link">via WhatsApp</a>
+        </div>
+        <div class="column">
+          <a href="https://tokopedia.com/yourstore" class="platform-link tokopedia-link">Tokopedia</a>
+          <a href="https://tiktok.com/@yourstore" class="platform-link tiktokshop-link">TikTok Shop</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Houseware-card" data-name="SAPU LIDI TAMAN POLOS "data-category="alat kebersihan">
+      <img src="img/houseware/SAPU LIDI POLOS1.png" alt="SAPU LIDI TAMAN POLOS" />
+      <h4 class="Houseware-card-title">SAPU LIDI TAMAN POLOS</h4>
+      <button class="show-more-btn" data-product="14">Show More</button>
+      <p>Rp. 47.500,- / ECERAN</p>
+      <p>Rp. xxx.xxx,- / LUSINAN</p>
+      <p>Rp. xxx.xxx,- / DUS</p>
+      <div class="buy-links">
+        <div class="column">
+          <a href="https://shopee.co.id/yourstore" class="platform-link shopee-link">Shopee</a>
+          <a href="https://wa.me/yourwa" class="platform-link whatsapp-link">via WhatsApp</a>
+        </div>
+        <div class="column">
+          <a href="https://tokopedia.com/yourstore" class="platform-link tokopedia-link">Tokopedia</a>
+          <a href="https://tiktok.com/@yourstore" class="platform-link tiktokshop-link">TikTok Shop</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- produk lainnya -->
+    <div class="Houseware-card" data-name="Tempat sampah BSS plastic" data-category="alat kebersihan">
+      <img src="img/houseware/Bss tempat sampah.png" alt="Tempat sampah BBS plastic" />
+      <h4 class="Houseware-card-title">Tempat sampah BSS plastic</h4>
+      <button class="show-more-btn" data-product="">Show More</button>
+      <p>Rp. 47.500,- / ECERAN</p>
+      <p>Rp. xxx.xxx,- / LUSINAN</p>
+      <p>Rp. xxx.xxx,- / DUS</p>
+      <div class="buy-links">
+        <div class="column">
+          <a href="https://shopee.co.id/yourstore" class="platform-link shopee-link">Shopee</a>
+          <a href="https://wa.me/yourwa" class="platform-link whatsapp-link">via WhatsApp</a>
+        </div>
+        <div class="column">
+          <a href="https://tokopedia.com/yourstore" class="platform-link tokopedia-link">Tokopedia</a>
+          <a href="https://tiktok.com/@yourstore" class="platform-link tiktokshop-link">TikTok Shop</a>
+        </div>
+      </div>
+    </div>
+
+ 
+  </div>
+</section>
+<!-- Houseware section akhir -->
+
+  
+
+
+
+  <!-- Modal structure -->
+  <div id="product-modal" class="modal" style="display: none">  
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Product Details</h2>
+      <div class="modal-body">
+        <!-- Tempat untuk menampilkan gambar produk -->
+        <div class="modal-image-container">
+          <img id="modal-image" src="" alt="Product Image" />
+        </div>
+        <!-- Tempat untuk menampilkan detail produk -->
+        <div id="modal-details">
+          <!-- Product details will be injected here by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>Meraih keberkahan dalam setiap transaksi.</p>
+            <div class="social-icons">
+              <a href="#"><i data-feather="facebook"></i></a>
+              <a href="#"><i data-feather="instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="index.html#Home">Home</a></li>
+              <li><a href="houseware.html">Houseware</a></li>
+              <li><a href="tentang.html">Tentang Kami</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <ul>
+              <li>
+                <i data-feather="map-pin"></i> Jl. Raya Jatibening 1 No.207,
+                RT.013/RW.005, Jatibening Baru, Kec. Pondok Gede, Kota Bks, Jawa
+                Barat 17412
+              </li>
+              <li><i data-feather="phone"></i> 02185529462</li>
+              <li><i data-feather="mail"></i> anovaindonesia@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2024 ANOVA INDONESIA | Created by
+          <a href=""
+            >ANOVAINDONESIA</a
+          >
+        </div>
+      </footer>
+
+    
+      <!-- Feather icons -->
+      <script>
+        feather.replace();
+      </script>
+
+      <!-- my javascript -->
+    <script src="js/script.js"></script>
+  </body>
+
+    </body>
+  </html>
